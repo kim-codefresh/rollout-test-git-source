@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: noam.rnd.sandbox.codefresh.io
+    - host: kim.rnd.sandbox.codefresh.io
       http:
         paths:
           - path: /rollout/qa/preview

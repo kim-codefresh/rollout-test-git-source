@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: canary-demo
+  name: canary-demo-preview
   annotations:
     ingress.kubernetes.io/proxy-body-size: 100M
     ingress.kubernetes.io/app-root: /
@@ -13,13 +13,13 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: noam.rnd.sandbox.codefresh.io
+    - host: kim.rnd.sandbox.codefresh.io
       http:
         paths:
-          - path: /rollout/qa
+          - path: /rollout/qa/preview
             pathType: Prefix
             backend:
               service:
-                name: canary-demo
+                name: canary-demo-preview
                 port:
                   number: 80
