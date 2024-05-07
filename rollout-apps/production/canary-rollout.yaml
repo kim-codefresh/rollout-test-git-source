@@ -4,7 +4,7 @@ metadata:
   name: canary-demo
 spec:
   replicas: 5
-  revisionHistoryLimit: 5
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: canary-demo
@@ -16,8 +16,8 @@ spec:
       containers:
         - name: canary-demo
           # image: idanarbel/rollouts-demo:purple
-          # image: idanarbel/rollouts-demo:green
-          image: dmaizel/rollouts-demo:red
+          image: idanarbel/rollouts-demo:green
+          # image: dmaizel/rollouts-demo:red
           imagePullPolicy: Always
           ports:
             - name: http
