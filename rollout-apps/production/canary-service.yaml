@@ -8,6 +8,11 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
+      readinessProbe:
+        httpGet:
+          path: /nonExist # test degraded
+          port: 80
+      
   selector:
     app: canary-demo
   type: LoadBalancer
