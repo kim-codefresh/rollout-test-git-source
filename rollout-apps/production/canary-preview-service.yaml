@@ -9,4 +9,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: canary-demoa
+    app: canary-demo
