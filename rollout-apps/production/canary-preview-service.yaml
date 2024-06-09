@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: canary-demo-preview
+  name: canary-demo-preview  runtime: kim-local-runtime
 spec:
   ports:
     - port: 80
