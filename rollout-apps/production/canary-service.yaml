@@ -8,6 +8,3 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
-  selector:
-    app: canary-demo
-  type: LoadBalancer
