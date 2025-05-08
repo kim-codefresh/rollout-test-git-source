@@ -27,11 +27,11 @@ spec:
             requests:
               memory: 32Mi
               cpu: 5m
-strategy:
-  canary:
-    canaryService: canary-demo-preview
-    steps:
-      - setWeight: 20
-      - pause:
-          duration: 120 # seconds
-      - setWeight: 40
+      strategy:
+        canary:
+          canaryService: canary-demo-preview
+          steps:
+            - setWeight: 20
+            - pause:
+                duration: 120 # seconds
+            - setWeight: 40
