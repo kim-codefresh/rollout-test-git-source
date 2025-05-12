@@ -33,6 +33,6 @@ spec:
       stableService: canary-demo
       steps:
       - setWeight: 50
-      - pause: {duration: 10}
-      - setWeight: 100
       - pause: {}
+      - setWeight: 100
+      - pause: {duration: 10}
