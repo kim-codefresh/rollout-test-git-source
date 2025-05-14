@@ -32,8 +32,8 @@ spec:
       canaryService: canary-demo-preview
       stableService: canary-demo
       steps:
-        - setWeight: 50
-        - pause: {}
+        # - setWeight: 50
+        # - pause: {}
         - analysis:
             templates:
               - templateName: conditional-tests
