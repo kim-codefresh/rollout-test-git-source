@@ -30,6 +30,10 @@ spec:
   strategy:
     canary:
       canaryService: canary-demo-preview
+      stableService: canary-demo
       steps:
-        - setWeight: 20
-        - pause: { duration: 2m }
+      - setWeight: 50
+      - pause: {}
+      - analysis:
+          templates:
+            - templateName: conditional-tests
