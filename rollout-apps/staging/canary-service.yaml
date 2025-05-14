@@ -10,4 +10,4 @@ spec:
       name: http
   selector:
     app: canary-demo
-  # type: LoadBalancer # running on kind
+  # type: LoadBalancer #running on kind
